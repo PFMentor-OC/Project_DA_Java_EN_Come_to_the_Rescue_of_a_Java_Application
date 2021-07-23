@@ -15,7 +15,7 @@ Dans le répértoire racide de src, il y a au moins ce README.md et symptoms.txt
 ### Compiler
 
 ```bash
-> javac -d .\bin\ .\src\com\hemebiotech\analytics\AnalyticsCounter.java
+> javac -d .\bin\ -cp .\src .\src\com\hemebiotech\analytics\AnalyticsCounter.java
 ```
 
 ### Tester
