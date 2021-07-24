@@ -21,7 +21,9 @@ public class AnalyticsCounter {
 		if (args.length == 1) {
 			path = args[0];
 		} else {
-			path = ".";
+			path=".";
+			System.out.println("Usage: java <PGMJAVA> <Le path vers le fichier>");
+			System.exit(0);
 		}
 		System.out.printf("REP=%s FICH=%s\n", Paths.get(path).getParent(), Paths.get(path).getFileName());
 		final String inputFile = path;
