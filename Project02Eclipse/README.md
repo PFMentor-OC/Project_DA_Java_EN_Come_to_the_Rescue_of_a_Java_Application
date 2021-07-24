@@ -1,5 +1,28 @@
 # Sample project for OpenClassroom's fundamentals of Java
 
+## Dans un répértoire racine contenant:
+
+Au moins les fichiers suivant:
+
+```
+> git ls -R .
+.:
+README.md  result.out  src  symptoms.txt
+
+./src:
+com
+
+./src/com:
+hemebiotech
+
+./src/com/hemebiotech:
+analytics
+
+./src/com/hemebiotech/analytics:
+AnalyticsCounter.java  NumberOfOccurrences.java         WriteSymptoms.java
+ISymptomReader.java    ReaderSymptomsDataFromFile.java
+```
+
 ## pour compiler
 
 **src** :  les sources
@@ -11,6 +34,8 @@ pour vérifier l'existance de java
 ```
 
 Dans le répértoire racide de src, il y a au moins ce README.md et symptoms.txt et le répertoire src
+
+## Environnement windows 
 
 ### Compiler
 
@@ -25,7 +50,19 @@ Lancer le programme si tous va bien
 java -cp .\bin\ com.hemebiotech.analytics.AnalyticsCounter
 ```
 
+## Environnment Linux
 
 
+### Compiler
 
+```bash
+> javac -d bin/ -cp src/ ./src/com/hemebiotech/analytics/AnalyticsCounter.java
+```
+
+### Tester
+Lancer le programme si tous va bien 
+
+```bash
+> java -cp bin/ com.hemebiotech.analytics.AnalyticsCounter ./symptoms.txt
+```
 
